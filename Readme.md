@@ -1,4 +1,4 @@
-# Learn Gitttt
+# Learn New Git
 
 
 ```
