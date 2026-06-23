@@ -162,6 +162,8 @@ git add <conflict-code-file>
 ## Changing Remote URL
 ```sh
 git remote remove origin
+```
+```sh
 git remote add origin NEW_URL
 ```
 ## Status of Git repo
@@ -173,8 +175,14 @@ shows what current changes made what is current branch.
 ## Diff to check changes
 ```sh
 git diff                        # unstaged changes vs last commit
+```
+```sh
 git diff --staged               # staged changes vs last commit
+```
+```sh
 git diff <branch1> <branch2>    # compare two branches
+```
+```sh
 git diff <file>                 # diff for one specific file
 ```
 ## git difftool — Visual Diff in External Editor
@@ -214,11 +222,23 @@ git config --global diff.tool
 ## Temporarily store changes before switching to branch.
 ```sh
 git stash                        # stash all uncommitted changes
+```
+```sh
 git stash push -m "label"        # stash with a name so you remember it
+```
+```sh
 git stash push <filename>        # stash one specific file
+```
+```sh
 git stash list                   # see all stashes
+```
+```sh
 git stash pop                    # bring back latest stash + delete it
+```
+```sh
 git stash apply stash@{0}        # bring back specific stash, keep it in list
+```
+```sh
 git stash drop stash@{0}         # delete a specific stash
 ```
 
@@ -229,10 +249,26 @@ git stash drop stash@{0}         # delete a specific stash
 
 ```sh
 git pull            # get remote latest changes
+```
+```sh
 git checkout -b     # make new branch
+```
+```sh
 git add .           # stage files
+```
+```sh
 git commit -m       # push to local repo
+```
+```sh
 git push            # push to remote repo
 ```
 last line if you are part of team and not head person of project. head person of project will review it and then merge it to main branch.
 then cycle repeates.
+
+Resources to Learn:
+
+[Git Official Cheetsheet](https://git-scm.com/cheat-sheet)
+
+[Git Tutorial by W3 School](https://www.w3schools.com/git/default.asp)
+
+[How Git Works by ByteByteGo](https://youtu.be/e9lnsKot_SQ)
